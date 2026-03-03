@@ -1,73 +1,72 @@
 import os
-import pandas as pd
-from sqlalchemy import create_engine
-from datetime import datetime
+import sys
+from dataclasses import dataclass
+
+from sklearn.model_selection import train_test_split
+
+from src.exception_handler import CustomException
+from src.logger import get_logger
+from src.utils import read_sql_data
+
+logger = get_logger(__name__)
+
+
+@dataclass
+class DataIngestionConfig:
+    artifacts_dir: str = "artifacts"
+    raw_data_path: str = os.path.join("artifacts", "raw.csv")
+    train_data_path: str = os.path.join("artifacts", "train.csv")
+    test_data_path: str = os.path.join("artifacts", "test.csv")
 
 
 class DataIngestion:
     def __init__(self):
-        # MySQL connection config
-        self.username = "root"
-        self.password = "your_password"
-        self.host = "localhost"
-        self.port = "3306"
-        self.database = "sakila"
+        self.config = DataIngestionConfig()
 
-        # output folder
-        self.raw_data_path = "data/raw"
-        os.makedirs(self.raw_data_path, exist_ok=True)
+    def initiate_data_ingestion(self):
+        try:
+            logger.info("Starting data ingestion from MySQL")
 
-    def connect_db(self):
-        """Create MySQL connection using SQLAlchemy"""
-        connection_string = (
-            f"mysql+pymysql://{self.username}:{self.password}"
-            f"@{self.host}:{self.port}/{self.database}"
-        )
-        engine = create_engine(connection_string)
-        return engine
+            query = """
+                SELECT 
+                    c.customer_id,
+                    c.first_name,
+                    c.last_name,
+                    c.email,
+                    c.active,
+                    IFNULL(SUM(p.amount), 0) AS total_spent,
+                    IFNULL(COUNT(p.payment_id), 0) AS total_transactions
+                FROM customer c
+                LEFT JOIN payment p 
+                ON c.customer_id = p.customer_id
+                GROUP BY c.customer_id;
+            """
 
-    def fetch_data(self):
-        """
-        Example: Customer + Payment join
-        You can modify query as per project need
-        """
-        query = """
-        SELECT 
-            c.customer_id,
-            c.first_name,
-            c.last_name,
-            c.email,
-            c.active,
-            SUM(p.amount) AS total_spent,
-            COUNT(p.payment_id) AS total_transactions
-        FROM customer c
-        LEFT JOIN payment p 
-        ON c.customer_id = p.customer_id
-        GROUP BY c.customer_id;
-        """
+            df = read_sql_data(query)
 
-        engine = self.connect_db()
-        df = pd.read_sql(query, engine)
+            logger.info(f"Data successfully read → Shape: {df.shape}")
 
-        return df
+            os.makedirs(self.config.artifacts_dir, exist_ok=True)
 
-    def save_data(self, df):
-        """Save dataset to data/raw folder"""
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        file_path = os.path.join(self.raw_data_path, f"customer_data_{timestamp}.csv")
-        df.to_csv(file_path, index=False)
-        print(f"✅ Data saved at: {file_path}")
+            df.to_csv(self.config.raw_data_path, index=False)
+            logger.info("Raw data saved")
 
-    def log_shape(self, df):
-        """Log dataset shape"""
-        print("📊 Dataset Info")
-        print("Rows:", df.shape[0])
-        print("Columns:", df.shape[1])
-        print("Columns List:", list(df.columns))
+            train_set, test_set = train_test_split(
+                df,
+                test_size=0.2,
+                random_state=42
+            )
 
+            train_set.to_csv(self.config.train_data_path, index=False)
+            test_set.to_csv(self.config.test_data_path, index=False)
 
-if __name__ == "__main__":
-    ingestion = DataIngestion()
-    data = ingestion.fetch_data()
-    ingestion.log_shape(data)
-    ingestion.save_data(data)
+            logger.info("Train-test split completed")
+
+            return (
+                self.config.train_data_path,
+                self.config.test_data_path
+            )
+
+        except Exception as e:
+            logger.error("Error in data ingestion")
+            raise CustomException(e, sys)

@@ -1,0 +1,35 @@
+{"timestamp": "2026-03-03 12:01:09", "level": "INFO", "module": "__main__", "line_no": 11, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 12:01:09", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 12:01:09", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 12:01:09", "level": "ERROR", "module": "src.utils", "line_no": 49, "message": "Error while reading data from MySQL"}
+{"timestamp": "2026-03-03 12:01:09", "level": "ERROR", "module": "src.data_ingestion", "line_no": 71, "message": "Error in data ingestion"}
+{"timestamp": "2026-03-03 12:01:09", "level": "ERROR", "module": "__main__", "line_no": 24, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 12:17:22", "level": "INFO", "module": "__main__", "line_no": 11, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 12:17:22", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 12:17:22", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 12:17:22", "level": "ERROR", "module": "src.utils", "line_no": 49, "message": "Error while reading data from MySQL"}
+{"timestamp": "2026-03-03 12:17:22", "level": "ERROR", "module": "src.data_ingestion", "line_no": 71, "message": "Error in data ingestion"}
+{"timestamp": "2026-03-03 12:17:22", "level": "ERROR", "module": "__main__", "line_no": 24, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 12:20:22", "level": "INFO", "module": "__main__", "line_no": 11, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 12:20:22", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 12:20:22", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 12:20:22", "level": "ERROR", "module": "src.utils", "line_no": 49, "message": "Error while reading data from MySQL"}
+{"timestamp": "2026-03-03 12:20:22", "level": "ERROR", "module": "src.data_ingestion", "line_no": 71, "message": "Error in data ingestion"}
+{"timestamp": "2026-03-03 12:20:22", "level": "ERROR", "module": "__main__", "line_no": 24, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 12:33:18", "level": "INFO", "module": "__main__", "line_no": 11, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 12:33:18", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 12:33:18", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 12:33:18", "level": "ERROR", "module": "src.utils", "line_no": 49, "message": "Error while reading data from MySQL"}
+{"timestamp": "2026-03-03 12:33:18", "level": "ERROR", "module": "src.data_ingestion", "line_no": 71, "message": "Error in data ingestion"}
+{"timestamp": "2026-03-03 12:33:18", "level": "ERROR", "module": "__main__", "line_no": 24, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "__main__", "line_no": 11, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.data_ingestion", "line_no": 47, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.data_ingestion", "line_no": 52, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.data_ingestion", "line_no": 63, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "__main__", "line_no": 18, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "__main__", "line_no": 19, "message": "Test data saved at: artifacts\\test.csv"}
