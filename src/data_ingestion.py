@@ -27,20 +27,23 @@ class DataIngestion:
         try:
             logger.info("Starting data ingestion from MySQL")
 
-            query = """
-                SELECT 
-                    c.customer_id,
-                    c.first_name,
-                    c.last_name,
-                    c.email,
-                    c.active,
-                    IFNULL(SUM(p.amount), 0) AS total_spent,
-                    IFNULL(COUNT(p.payment_id), 0) AS total_transactions
-                FROM customer c
-                LEFT JOIN payment p 
-                ON c.customer_id = p.customer_id
-                GROUP BY c.customer_id;
-            """
+            query = """SELECT 
+                            c.customer_id,
+                            c.first_name,
+                            c.last_name,
+                            c.email,
+                            c.active,
+                            SUM(p.amount) AS total_spent,
+                            COUNT(p.payment_id) AS total_transactions
+                        FROM customer c
+                        JOIN payment p ON c.customer_id = p.customer_id
+                        GROUP BY 
+                            c.customer_id,
+                            c.first_name,
+                            c.last_name,
+                            c.email,
+                            c.active;
+                    """
 
             df = read_sql_data(query)
 

@@ -33,3 +33,120 @@
 {"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "src.data_ingestion", "line_no": 63, "message": "Train-test split completed"}
 {"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "__main__", "line_no": 18, "message": "Train data saved at: artifacts\\train.csv"}
 {"timestamp": "2026-03-03 12:41:51", "level": "INFO", "module": "__main__", "line_no": 19, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:26:58", "level": "INFO", "module": "__main__", "line_no": 12, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 13:26:58", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 13:26:58", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 47, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 52, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 63, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "__main__", "line_no": 21, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "__main__", "line_no": 22, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:26:59", "level": "INFO", "module": "src.data_validation", "line_no": 66, "message": "Starting data validation"}
+{"timestamp": "2026-03-03 13:26:59", "level": "ERROR", "module": "__main__", "line_no": 39, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "__main__", "line_no": 12, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.data_ingestion", "line_no": 47, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.data_ingestion", "line_no": 52, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.data_ingestion", "line_no": 63, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "__main__", "line_no": 21, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "__main__", "line_no": 22, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:28:09", "level": "INFO", "module": "src.data_validation", "line_no": 66, "message": "Starting data validation"}
+{"timestamp": "2026-03-03 13:28:10", "level": "INFO", "module": "src.data_validation", "line_no": 25, "message": "Validating columns"}
+{"timestamp": "2026-03-03 13:28:10", "level": "ERROR", "module": "src.data_validation", "line_no": 32, "message": "Missing columns: ['gender', 'age', 'category', 'quantity', 'price_per_unit', 'total_sale']"}
+{"timestamp": "2026-03-03 13:28:10", "level": "INFO", "module": "src.data_validation", "line_no": 39, "message": "Checking for null values"}
+{"timestamp": "2026-03-03 13:28:10", "level": "INFO", "module": "src.data_validation", "line_no": 49, "message": "Null value check passed"}
+{"timestamp": "2026-03-03 13:28:10", "level": "INFO", "module": "src.data_validation", "line_no": 53, "message": "Checking duplicate rows"}
+{"timestamp": "2026-03-03 13:28:10", "level": "WARNING", "module": "src.data_validation", "line_no": 58, "message": "Duplicate rows found: 478"}
+{"timestamp": "2026-03-03 13:28:10", "level": "ERROR", "module": "src.data_validation", "line_no": 79, "message": "Data validation failed"}
+{"timestamp": "2026-03-03 13:28:10", "level": "ERROR", "module": "__main__", "line_no": 39, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "__main__", "line_no": 12, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_ingestion", "line_no": 47, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_ingestion", "line_no": 52, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_ingestion", "line_no": 63, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "__main__", "line_no": 21, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "__main__", "line_no": 22, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_validation", "line_no": 66, "message": "Starting data validation"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_validation", "line_no": 25, "message": "Validating columns"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_validation", "line_no": 35, "message": "All required columns are present"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_validation", "line_no": 39, "message": "Checking for null values"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_validation", "line_no": 49, "message": "Null value check passed"}
+{"timestamp": "2026-03-03 13:29:46", "level": "INFO", "module": "src.data_validation", "line_no": 53, "message": "Checking duplicate rows"}
+{"timestamp": "2026-03-03 13:29:46", "level": "WARNING", "module": "src.data_validation", "line_no": 58, "message": "Duplicate rows found: 478"}
+{"timestamp": "2026-03-03 13:29:46", "level": "ERROR", "module": "src.data_validation", "line_no": 79, "message": "Data validation failed"}
+{"timestamp": "2026-03-03 13:29:46", "level": "ERROR", "module": "__main__", "line_no": 39, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 13:32:40", "level": "INFO", "module": "__main__", "line_no": 12, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 13:32:40", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 13:32:40", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 13:32:40", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_ingestion", "line_no": 50, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_ingestion", "line_no": 55, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_ingestion", "line_no": 66, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "__main__", "line_no": 21, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "__main__", "line_no": 22, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_validation", "line_no": 66, "message": "Starting data validation"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_validation", "line_no": 25, "message": "Validating columns"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_validation", "line_no": 35, "message": "All required columns are present"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_validation", "line_no": 39, "message": "Checking for null values"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_validation", "line_no": 49, "message": "Null value check passed"}
+{"timestamp": "2026-03-03 13:32:41", "level": "INFO", "module": "src.data_validation", "line_no": 53, "message": "Checking duplicate rows"}
+{"timestamp": "2026-03-03 13:32:41", "level": "WARNING", "module": "src.data_validation", "line_no": 58, "message": "Duplicate rows found: 478"}
+{"timestamp": "2026-03-03 13:32:41", "level": "ERROR", "module": "src.data_validation", "line_no": 79, "message": "Data validation failed"}
+{"timestamp": "2026-03-03 13:32:41", "level": "ERROR", "module": "__main__", "line_no": 39, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "__main__", "line_no": 12, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 50, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 55, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_ingestion", "line_no": 66, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "__main__", "line_no": 21, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "__main__", "line_no": 22, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_validation", "line_no": 66, "message": "Starting data validation"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_validation", "line_no": 25, "message": "Validating columns"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_validation", "line_no": 35, "message": "All required columns are present"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_validation", "line_no": 39, "message": "Checking for null values"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_validation", "line_no": 49, "message": "Null value check passed"}
+{"timestamp": "2026-03-03 13:32:59", "level": "INFO", "module": "src.data_validation", "line_no": 53, "message": "Checking duplicate rows"}
+{"timestamp": "2026-03-03 13:32:59", "level": "WARNING", "module": "src.data_validation", "line_no": 58, "message": "Duplicate rows found: 478"}
+{"timestamp": "2026-03-03 13:32:59", "level": "ERROR", "module": "src.data_validation", "line_no": 79, "message": "Data validation failed"}
+{"timestamp": "2026-03-03 13:32:59", "level": "ERROR", "module": "__main__", "line_no": 39, "message": "Exception occurred in application"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "__main__", "line_no": 13, "message": "\ud83d\ude80 Application started"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_ingestion", "line_no": 28, "message": "Starting data ingestion from MySQL"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.utils", "line_no": 27, "message": "Connecting to MySQL database"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.utils", "line_no": 37, "message": "Connection established successfully"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.utils", "line_no": 41, "message": "Data fetched successfully \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.utils", "line_no": 44, "message": "Database connection closed"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_ingestion", "line_no": 50, "message": "Data successfully read \u2192 Shape: (599, 7)"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_ingestion", "line_no": 55, "message": "Raw data saved"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_ingestion", "line_no": 66, "message": "Train-test split completed"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "__main__", "line_no": 22, "message": "Train data saved at: artifacts\\train.csv"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "__main__", "line_no": 23, "message": "Test data saved at: artifacts\\test.csv"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_validation", "line_no": 66, "message": "Starting data validation"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_validation", "line_no": 25, "message": "Validating columns"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_validation", "line_no": 35, "message": "All required columns are present"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_validation", "line_no": 39, "message": "Checking for null values"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_validation", "line_no": 49, "message": "Null value check passed"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_validation", "line_no": 53, "message": "Checking duplicate rows"}
+{"timestamp": "2026-03-03 13:54:53", "level": "WARNING", "module": "src.data_validation", "line_no": 58, "message": "Duplicate rows found: 478"}
+{"timestamp": "2026-03-03 13:54:53", "level": "ERROR", "module": "src.data_validation", "line_no": 79, "message": "Data validation failed"}
+{"timestamp": "2026-03-03 13:54:53", "level": "WARNING", "module": "__main__", "line_no": 35, "message": "Validation issues found. Running transformation step."}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_transformation", "line_no": 12, "message": "Starting data transformation"}
+{"timestamp": "2026-03-03 13:54:53", "level": "WARNING", "module": "src.data_transformation", "line_no": 18, "message": "Removing 478 duplicate rows"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "src.data_transformation", "line_no": 26, "message": "Data transformation completed"}
+{"timestamp": "2026-03-03 13:54:53", "level": "INFO", "module": "__main__", "line_no": 43, "message": "Cleaned data saved at: data/processed/cleaned_data.csv"}
